@@ -3,17 +3,13 @@ void setup()
 {
   background(0);
   size(660, 500);
- 
   noLoop();
- 
 }
 void draw()
 {
   noLoop();
-  fill(255);
   background(0);
-  text("Total: " + total,300,50);
-  total = 0;
+   total = 0;
   for ( int i = 100; i<=600;i+=100){
     for (int p = 100; p<500; p+=100){
      Die bob = new Die(i,p);
@@ -21,6 +17,8 @@ void draw()
   bob.show();
   }
   }
+    fill(255);
+    text("Total: " + total,300,50);
 }
 void mousePressed()
 {
